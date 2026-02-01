@@ -18,7 +18,7 @@
   </Overview>
   <Category>Productivity: Tools:Artificial Intelligence</Category>
   <WebUI>http://[IP]:[PORT:18789]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/openclaw/openclaw/main/assets/logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/openclaw/openclaw/refs/heads/main/ui/public/favicon.svg</Icon>
   <Config Name="Web UI Port" Target="18789" Default="18789" Mode="tcp" Description="The port for the Moltbot Gateway UI." Type="Port" Display="always" Required="true" Mask="false">18789</Config>
   <Config Name="Appdata" Target="/home/node/.openclaw" Default="/mnt/user/appdata/moltbot" Mode="rw" Description="Persistent storage for Moltbot configuration and memory." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/moltbot</Config>
   <Config Name="Gateway Token" Target="OPENCLAW_GATEWAY_TOKEN" Default="" Mode="" Description="Secure token for the gateway. If left blank, one may be generated in the logs/config." Type="Variable" Display="always" Required="false" Mask="true"/>
