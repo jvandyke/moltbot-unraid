@@ -92,7 +92,7 @@ Since the new bot is on a new port (`18790`), you need a separate secure tunnel.
 2. Run a second serve command using a **different HTTPS port** (e.g., 8444):
    ```bash
    # Serve the second bot (Host Port 18790) on HTTPS port 8444
-   tailscale serve --bg --https=8444 / http://localhost:18790
+   tailscale serve --bg --https=8444 http://localhost:18790
    ```
 3. **Update the Variable:**
    - In the `Moltbot-User2` settings, set **Public URL** to: `https://your-machine.tailnet.ts.net:8444`
