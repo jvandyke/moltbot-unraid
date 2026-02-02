@@ -1,4 +1,4 @@
-name: Build and Push Moltbot
+name: Build and Push OpenClaw
 
 on:
   schedule:
@@ -12,7 +12,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository_owner }}/moltbot
+  IMAGE_NAME: ${{ github.repository_owner }}/openclaw
 
 jobs:
   build-and-push:
@@ -22,8 +22,8 @@ jobs:
       packages: write
 
     steps:
-      # 1. Checkout YOUR repo (to get Dockerfile & entrypoint)
-      - name: Checkout My Custom Assets
+      # 1. Checkout repo (to get Dockerfile & entrypoint)
+      - name: Checkout repo
         uses: actions/checkout@v4
         with:
           path: my-assets
